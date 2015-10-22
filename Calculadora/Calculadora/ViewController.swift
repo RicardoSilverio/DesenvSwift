@@ -47,6 +47,25 @@ class ViewController: UIViewController {
                         arrayItens.append(sender.titleLabel!.text!)
                     }
                 }
+            }else if(entrada == "+/-") {
+                let ultimo:String = arrayItens[arrayItens.count - 1]
+                if(arrayItens.count == 0) {
+                    return
+                } else {
+                    if(ultimo == "+" || ultimo == "-" || ultimo == "x" || ultimo == "/") {
+                        return
+                    } else if(temResultado) {
+                        arrayItens[arrayItens.count - 1] = String(Double(ultimo)! * -1)
+                    } else {
+                        let result:Double = calcOp.calculateWithArray(arrayItens) * -1
+                        arrayItens.removeAll()
+                        arrayItens.append(String(result))
+                    }
+                    lblResultado.text! = arrayItens[arrayItens.count - 1]
+                }
+            
+            
+            
             } else {
                 if(arrayItens.count == 0) {
                     arrayItens.append(sender.titleLabel!.text!)
@@ -76,6 +95,7 @@ class ViewController: UIViewController {
         if(temResultado) {
             let result:Double = calcOp.calculateWithArray(arrayItens)
             lblResultado.text = "\(result)"
+            temResultado = false
         }
     }
 }
