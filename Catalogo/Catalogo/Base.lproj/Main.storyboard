@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3xJ-LO-XqV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Books-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LivrosViewController" customModule="Catalogo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ji-5C-ZRf">
+                                <rect key="frame" x="46" y="84" width="87" height="110"/>
+                                <state key="normal" title="Button" image="Livro1"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DB7-ub-ccc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zI4-sI-Rzl">
+                                <rect key="frame" x="199" y="266" width="87" height="110"/>
+                                <state key="normal" title="Button" image="Livro4"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjS-BM-etO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BJ-ri-CnM">
+                                <rect key="frame" x="199" y="84" width="87" height="110"/>
+                                <state key="normal" title="Button" image="Livro2"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xws-ha-1wq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohp-LX-I5E">
+                                <rect key="frame" x="46" y="266" width="87" height="110"/>
+                                <state key="normal" title="Button" image="Livro3"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UkK-0L-tug"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Books" image="books" selectedImage="books" id="l9b-Mn-QU1"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="oIe-BW-k9s" kind="presentation" identifier="livrosToDetalheSegue" id="npH-mE-IIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="439"/>
+        </scene>
+        <!--Filmes Table View Controller-->
+        <scene sceneID="Cmt-qX-8Rl">
+            <objects>
+                <tableViewController id="lHS-KX-ErK" customClass="FilmesTableViewController" customModule="Catalogo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UhD-aw-TTY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="Aed-DY-w4d">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Filme0" rowHeight="130" id="Ulc-sC-W4L">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ulc-sC-W4L" id="18r-rh-VaM">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rus-aU-2um">
+                                                    <rect key="frame" x="83" y="12" width="162" height="107"/>
+                                                    <state key="normal" title="Button" image="filme1"/>
+                                                    <connections>
+                                                        <action selector="buttonFilmeTap:" destination="lHS-KX-ErK" eventType="touchUpInside" id="6WX-DK-TiI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Filme1" rowHeight="130" id="Jtg-my-lz2">
+                                        <rect key="frame" x="0.0" y="194" width="320" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jtg-my-lz2" id="osE-B1-0Zc">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kx-ig-Hd1">
+                                                    <rect key="frame" x="85" y="8" width="162" height="107"/>
+                                                    <state key="normal" title="Button" image="filme2"/>
+                                                    <connections>
+                                                        <action selector="buttonFilmeTap:" destination="lHS-KX-ErK" eventType="touchUpInside" id="kJF-2z-aVY"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Filme2" rowHeight="130" id="kqs-HY-5HH">
+                                        <rect key="frame" x="0.0" y="324" width="320" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kqs-HY-5HH" id="pld-uh-ocJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azP-MN-9Ga">
+                                                    <rect key="frame" x="84" y="8" width="162" height="107"/>
+                                                    <state key="normal" title="Button" image="filme3"/>
+                                                    <connections>
+                                                        <action selector="buttonFilmeTap:" destination="lHS-KX-ErK" eventType="touchUpInside" id="r4x-Eq-Koz"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Filme3" rowHeight="130" id="EKG-Es-vRR">
+                                        <rect key="frame" x="0.0" y="454" width="320" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EKG-Es-vRR" id="3c0-rK-2Qh">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb5-9v-xlv">
+                                                    <rect key="frame" x="80" y="11" width="162" height="107"/>
+                                                    <state key="normal" title="Button" image="filme4"/>
+                                                    <connections>
+                                                        <action selector="buttonFilmeTap:" destination="lHS-KX-ErK" eventType="touchUpInside" id="fId-1q-PWd"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="lHS-KX-ErK" id="vva-Lr-0NQ"/>
+                            <outlet property="delegate" destination="lHS-KX-ErK" id="Ki5-ae-E2d"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="J6N-ch-6Ao"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="oIe-BW-k9s" kind="show" identifier="filmesToDetalheSegue" id="Lmy-Ms-bbl"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmZ-mf-oef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="1153"/>
+        </scene>
+        <!--Detalhe-->
+        <scene sceneID="3x9-za-XfW">
+            <objects>
+                <viewController title="Detalhe" id="oIe-BW-k9s" customClass="DetalheViewController" customModule="Catalogo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GdS-V5-VX6"/>
+                        <viewControllerLayoutGuide type="bottom" id="9SW-fK-Mbz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWX-Uu-eUU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImG-ky-dgN">
+                                <rect key="frame" x="28" y="28" width="53" height="30"/>
+                                <state key="normal" title="Fechar"/>
+                                <connections>
+                                    <action selector="closeTap:" destination="oIe-BW-k9s" eventType="touchUpInside" id="zVw-nW-lk8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0q-Li-PgQ">
+                                <rect key="frame" x="52" y="214" width="97" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Parte 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPartTap:" destination="oIe-BW-k9s" eventType="touchUpInside" id="YlU-qp-XYf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44t-ss-mBB">
+                                <rect key="frame" x="182" y="215" width="97" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Parte 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPartTap:" destination="oIe-BW-k9s" eventType="touchUpInside" id="YKg-XK-wOr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPI-tH-MwH">
+                                <rect key="frame" x="52" y="120" width="227" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Livro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbH-As-o89">
+                                <rect key="frame" x="126" y="77" width="78" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="sRo-R9-PvU"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnClose" destination="ImG-ky-dgN" id="NvA-32-TXE"/>
+                        <outlet property="btnParte1" destination="g0q-Li-PgQ" id="QDn-Ms-jCe"/>
+                        <outlet property="btnParte2" destination="44t-ss-mBB" id="T22-lL-mag"/>
+                        <outlet property="lblItemTitulo" destination="fPI-tH-MwH" id="rOs-EX-knS"/>
+                        <outlet property="lblTitulo" destination="hbH-As-o89" id="bTA-cK-fg4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ue1-UY-dh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="439"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="96V-To-Oma">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3xJ-LO-XqV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="G7n-ch-NrT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="lBL-zJ-KYh"/>
+                        <segue destination="12A-dS-4Yf" kind="relationship" relationship="viewControllers" id="Ncy-gv-ui7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YE0-xJ-kc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="439"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="mLn-mR-DQp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="12A-dS-4Yf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Movies" image="movies" selectedImage="movies" id="HkR-LA-oxP"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MzP-Gy-TEH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lHS-KX-ErK" kind="relationship" relationship="rootViewController" id="FWj-ho-r1O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywn-YA-qIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="1153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Livro1" width="85" height="110"/>
+        <image name="Livro2" width="85" height="110"/>
+        <image name="Livro3" width="85" height="110"/>
+        <image name="Livro4" width="85" height="110"/>
+        <image name="books" width="50" height="50"/>
+        <image name="filme1" width="160" height="107"/>
+        <image name="filme2" width="160" height="107"/>
+        <image name="filme3" width="160" height="104"/>
+        <image name="filme4" width="161" height="108"/>
+        <image name="movies" width="50" height="50"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lmy-Ms-bbl"/>
+    </inferredMetricsTieBreakers>
+</document>

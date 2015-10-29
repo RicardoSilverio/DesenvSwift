@@ -68,8 +68,19 @@ class ViewController: UIViewController, UITextFieldDelegate, SyncServerDelegate 
     }
     
     @IBAction func salvarContato(sender: UIButton) {
-        let sync:SyncServer = SyncServer(delegate: self)
-        sync.saveInfo()
+        
+        let actionSheet:UIAlertController = UIAlertController(title: "Contato", message: "Deseja salvar o seguinte contato: \nNome: " + txtNome.text! + "\nSexo: " + (segSexo.selectedSegmentIndex == 0 ? "Feminino" : "Masculino") + "\nIdade: " + lblIdade.text! + "\nFavorito: " + (swtFavorito.on ? "Sim" : "Não") + "\nForma de Contato: " + lblFormaContato.text! , preferredStyle: UIAlertControllerStyle.Alert)
+        
+        actionSheet.addAction(UIAlertAction(title: "Sim", style: UIAlertActionStyle.Default, handler: { _ in
+            let sync:SyncServer = SyncServer(delegate: self)
+            sync.saveInfo()
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Não", style: UIAlertActionStyle.Cancel, handler: nil))
+        
+        self.presentViewController(actionSheet, animated: true, completion: nil)
+        
+        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
