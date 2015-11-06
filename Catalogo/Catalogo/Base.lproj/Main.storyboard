@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3xJ-LO-XqV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3xJ-LO-XqV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Books-->
@@ -18,6 +18,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ji-5C-ZRf">
                                 <rect key="frame" x="46" y="84" width="87" height="110"/>
+                                <animations/>
                                 <state key="normal" title="Button" image="Livro1"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DB7-ub-ccc"/>
@@ -25,6 +26,7 @@
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zI4-sI-Rzl">
                                 <rect key="frame" x="199" y="266" width="87" height="110"/>
+                                <animations/>
                                 <state key="normal" title="Button" image="Livro4"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjS-BM-etO"/>
@@ -32,6 +34,7 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BJ-ri-CnM">
                                 <rect key="frame" x="199" y="84" width="87" height="110"/>
+                                <animations/>
                                 <state key="normal" title="Button" image="Livro2"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xws-ha-1wq"/>
@@ -39,12 +42,14 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohp-LX-I5E">
                                 <rect key="frame" x="46" y="266" width="87" height="110"/>
+                                <animations/>
                                 <state key="normal" title="Button" image="Livro3"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UkK-0L-tug"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Books" image="books" selectedImage="books" id="l9b-Mn-QU1"/>
@@ -57,13 +62,14 @@
             </objects>
             <point key="canvasLocation" x="1001" y="439"/>
         </scene>
-        <!--Filmes Table View Controller-->
+        <!--Filmes-->
         <scene sceneID="Cmt-qX-8Rl">
             <objects>
                 <tableViewController id="lHS-KX-ErK" customClass="FilmesTableViewController" customModule="Catalogo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UhD-aw-TTY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="Aed-DY-w4d">
@@ -77,13 +83,16 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rus-aU-2um">
                                                     <rect key="frame" x="83" y="12" width="162" height="107"/>
+                                                    <animations/>
                                                     <state key="normal" title="Button" image="filme1"/>
                                                     <connections>
                                                         <action selector="buttonFilmeTap:" destination="lHS-KX-ErK" eventType="touchUpInside" id="6WX-DK-TiI"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Filme1" rowHeight="130" id="Jtg-my-lz2">
                                         <rect key="frame" x="0.0" y="194" width="320" height="130"/>
@@ -94,13 +103,16 @@
                                             <subviews>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kx-ig-Hd1">
                                                     <rect key="frame" x="85" y="8" width="162" height="107"/>
+                                                    <animations/>
                                                     <state key="normal" title="Button" image="filme2"/>
                                                     <connections>
                                                         <action selector="buttonFilmeTap:" destination="lHS-KX-ErK" eventType="touchUpInside" id="kJF-2z-aVY"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Filme2" rowHeight="130" id="kqs-HY-5HH">
                                         <rect key="frame" x="0.0" y="324" width="320" height="130"/>
@@ -111,13 +123,16 @@
                                             <subviews>
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azP-MN-9Ga">
                                                     <rect key="frame" x="84" y="8" width="162" height="107"/>
+                                                    <animations/>
                                                     <state key="normal" title="Button" image="filme3"/>
                                                     <connections>
                                                         <action selector="buttonFilmeTap:" destination="lHS-KX-ErK" eventType="touchUpInside" id="r4x-Eq-Koz"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Filme3" rowHeight="130" id="EKG-Es-vRR">
                                         <rect key="frame" x="0.0" y="454" width="320" height="130"/>
@@ -128,13 +143,16 @@
                                             <subviews>
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb5-9v-xlv">
                                                     <rect key="frame" x="80" y="11" width="162" height="107"/>
+                                                    <animations/>
                                                     <state key="normal" title="Button" image="filme4"/>
                                                     <connections>
                                                         <action selector="buttonFilmeTap:" destination="lHS-KX-ErK" eventType="touchUpInside" id="fId-1q-PWd"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -144,7 +162,7 @@
                             <outlet property="delegate" destination="lHS-KX-ErK" id="Ki5-ae-E2d"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="J6N-ch-6Ao"/>
+                    <navigationItem key="navigationItem" title="Filmes" id="J6N-ch-6Ao"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="oIe-BW-k9s" kind="show" identifier="filmesToDetalheSegue" id="Lmy-Ms-bbl"/>
@@ -168,6 +186,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImG-ky-dgN">
                                 <rect key="frame" x="28" y="28" width="53" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Fechar"/>
                                 <connections>
                                     <action selector="closeTap:" destination="oIe-BW-k9s" eventType="touchUpInside" id="zVw-nW-lk8"/>
@@ -175,6 +194,7 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0q-Li-PgQ">
                                 <rect key="frame" x="52" y="214" width="97" height="44"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Parte 1">
@@ -186,6 +206,7 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44t-ss-mBB">
                                 <rect key="frame" x="182" y="215" width="97" height="44"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Parte 2">
@@ -197,17 +218,20 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPI-tH-MwH">
                                 <rect key="frame" x="52" y="120" width="227" height="53"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Livro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbH-As-o89">
                                 <rect key="frame" x="126" y="77" width="78" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="sRo-R9-PvU"/>
@@ -232,6 +256,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="G7n-ch-NrT">
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -253,6 +278,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MzP-Gy-TEH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

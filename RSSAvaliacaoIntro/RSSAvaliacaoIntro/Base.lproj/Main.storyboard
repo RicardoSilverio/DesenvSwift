@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dBs-Ho-n5Q">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="e75-kh-o5d">
+            <objects>
+                <tabBarController id="dBs-Ho-n5Q" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Jmd-Gk-eRz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BQl-ac-91w" kind="relationship" relationship="viewControllers" id="MWw-XP-mTj"/>
+                        <segue destination="up5-gO-EgQ" kind="relationship" relationship="viewControllers" id="sCf-fD-Rek"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cO-Qo-aN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="-383"/>
+        </scene>
+        <!--Form-->
+        <scene sceneID="KV5-cN-hAi">
+            <objects>
+                <navigationController id="BQl-ac-91w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Form" image="tabIcon1" id="W4k-iT-2eQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P1y-Is-Q9p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KbP-xJ-AMR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OgS-OS-k98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="-383"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="Qdz-qT-eU7">
+            <objects>
+                <viewController title="Image" id="up5-gO-EgQ" customClass="RSSMyImageViewController" customModule="RSSAvaliacaoIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJ3-mI-Vcb"/>
+                        <viewControllerLayoutGuide type="bottom" id="YJM-kl-ads"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1HJ-AS-vaj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JM1-yc-ae9">
+                                <rect key="frame" x="40" y="48" width="240" height="188"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E32-f3-ZTk">
+                                <rect key="frame" x="132" y="285" width="57" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.71547632420663931" blue="0.50829104258499069" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButtonSelect:" destination="up5-gO-EgQ" eventType="touchUpInside" id="aI4-fc-w9O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Image" image="tabIcon2" id="gM3-Jw-fHh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imgFruit" destination="JM1-yc-ae9" id="Ccr-rf-RZD"/>
+                        <segue destination="zaf-D1-BZK" kind="presentation" identifier="myImageToImageSelectSegue" id="GhS-Ic-ic0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SxR-Hc-OOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="337"/>
+        </scene>
+        <!--Select Image-->
+        <scene sceneID="OoI-0p-e3n">
+            <objects>
+                <viewController title="Select Image" id="zaf-D1-BZK" customClass="RSSImageSelectViewController" customModule="RSSAvaliacaoIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="chC-DU-w9X"/>
+                        <viewControllerLayoutGuide type="bottom" id="1CH-1H-YSn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jha-TQ-dn6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMS-yc-Uwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="337"/>
+        </scene>
+        <!--FormFill-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="FormFill" id="BYZ-38-t0r" customClass="RSSFormFillViewController" customModule="RSSAvaliacaoIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6n-db-uyg">
+                                <rect key="frame" x="20" y="104" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYr-e0-ciC">
+                                <rect key="frame" x="20" y="207" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-Ss-Djb">
+                                <rect key="frame" x="121" y="269" width="79" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnX-BZ-gPH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSm-q4-oU5">
+                                <rect key="frame" x="20" y="155" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Form" image="tabIcon1" id="72E-fu-LKd"/>
+                    <navigationItem key="navigationItem" title="Form" id="UPB-Kj-i3r"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="nSm-q4-oU5" id="0JI-9R-oQF"/>
+                        <outlet property="txtName" destination="F6n-db-uyg" id="ZeB-Mi-6gd"/>
+                        <outlet property="txtPhone" destination="XYr-e0-ciC" id="9Xx-r0-WBK"/>
+                        <segue destination="SaP-a2-bKv" kind="show" identifier="formToDetailSegue" id="EqO-fl-MHa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="-383"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="KYr-4N-t8Y">
+            <objects>
+                <viewController title="Detail" id="SaP-a2-bKv" customClass="RSSFormDetailViewController" customModule="RSSAvaliacaoIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KIQ-rS-iLc"/>
+                        <viewControllerLayoutGuide type="bottom" id="XzF-9U-fhv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OU8-Jg-Ye2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lur-dc-FHa">
+                                <rect key="frame" x="15" y="107" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Z-ki-dPn">
+                                <rect key="frame" x="15" y="209" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97M-a8-w6U">
+                                <rect key="frame" x="15" y="159" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="97M-a8-w6U" id="KM8-oB-dXW"/>
+                        <outlet property="txtName" destination="Lur-dc-FHa" id="xre-Vu-UBi"/>
+                        <outlet property="txtPhone" destination="Q4Z-ki-dPn" id="Opx-KE-5WZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JiR-3M-6A9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-383"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabIcon1" width="30" height="30"/>
+        <image name="tabIcon2" width="30" height="30"/>
+    </resources>
+</document>

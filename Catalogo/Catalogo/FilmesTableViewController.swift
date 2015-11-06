@@ -12,6 +12,7 @@ class FilmesTableViewController: UITableViewController, DetalheViewControllerDel
     
     func buttonTapWithPart(part: Int) {
         let actionSheet = UIAlertController(title: "Filme", message: "Parte " + String(part), preferredStyle: UIAlertControllerStyle.Alert)
+        actionSheet.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(actionSheet, animated: true, completion: nil)
     }
     
