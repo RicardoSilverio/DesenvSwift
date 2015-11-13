@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A46581FC1BF5F300005EC4B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46581FB1BF5F300005EC4B8 /* AppDelegate.swift */; };
+		A46582011BF5F300005EC4B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46581FF1BF5F300005EC4B8 /* Main.storyboard */; };
+		A46582031BF5F300005EC4B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46582021BF5F300005EC4B8 /* Assets.xcassets */; };
+		A46582061BF5F300005EC4B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46582041BF5F300005EC4B8 /* LaunchScreen.storyboard */; };
+		A46582111BF5F301005EC4B8 /* ListaTenisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46582101BF5F301005EC4B8 /* ListaTenisTests.swift */; };
+		A465821C1BF5F301005EC4B8 /* ListaTenisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465821B1BF5F301005EC4B8 /* ListaTenisUITests.swift */; };
+		A465822A1BF5F34C005EC4B8 /* ListaTenis.plist in Resources */ = {isa = PBXBuildFile; fileRef = A46582291BF5F34C005EC4B8 /* ListaTenis.plist */; };
+		A465822C1BF5F39E005EC4B8 /* TenisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465822B1BF5F39E005EC4B8 /* TenisTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A465820D1BF5F301005EC4B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46581F01BF5F300005EC4B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46581F71BF5F300005EC4B8;
+			remoteInfo = ListaTenis;
+		};
+		A46582181BF5F301005EC4B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46581F01BF5F300005EC4B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46581F71BF5F300005EC4B8;
+			remoteInfo = ListaTenis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A46581F81BF5F300005EC4B8 /* ListaTenis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaTenis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46581FB1BF5F300005EC4B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A46582001BF5F300005EC4B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A46582021BF5F300005EC4B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A46582051BF5F300005EC4B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A46582071BF5F301005EC4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A465820C1BF5F301005EC4B8 /* ListaTenisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListaTenisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46582101BF5F301005EC4B8 /* ListaTenisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTenisTests.swift; sourceTree = "<group>"; };
+		A46582121BF5F301005EC4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46582171BF5F301005EC4B8 /* ListaTenisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListaTenisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A465821B1BF5F301005EC4B8 /* ListaTenisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTenisUITests.swift; sourceTree = "<group>"; };
+		A465821D1BF5F301005EC4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46582291BF5F34C005EC4B8 /* ListaTenis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ListaTenis.plist; sourceTree = "<group>"; };
+		A465822B1BF5F39E005EC4B8 /* TenisTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenisTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A46581F51BF5F300005EC4B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46582091BF5F301005EC4B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46582141BF5F301005EC4B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A46581EF1BF5F300005EC4B8 = {
+			isa = PBXGroup;
+			children = (
+				A46581FA1BF5F300005EC4B8 /* ListaTenis */,
+				A465820F1BF5F301005EC4B8 /* ListaTenisTests */,
+				A465821A1BF5F301005EC4B8 /* ListaTenisUITests */,
+				A46581F91BF5F300005EC4B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A46581F91BF5F300005EC4B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A46581F81BF5F300005EC4B8 /* ListaTenis.app */,
+				A465820C1BF5F301005EC4B8 /* ListaTenisTests.xctest */,
+				A46582171BF5F301005EC4B8 /* ListaTenisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A46581FA1BF5F300005EC4B8 /* ListaTenis */ = {
+			isa = PBXGroup;
+			children = (
+				A46582291BF5F34C005EC4B8 /* ListaTenis.plist */,
+				A46581FB1BF5F300005EC4B8 /* AppDelegate.swift */,
+				A46581FF1BF5F300005EC4B8 /* Main.storyboard */,
+				A46582021BF5F300005EC4B8 /* Assets.xcassets */,
+				A46582041BF5F300005EC4B8 /* LaunchScreen.storyboard */,
+				A46582071BF5F301005EC4B8 /* Info.plist */,
+				A465822B1BF5F39E005EC4B8 /* TenisTableViewController.swift */,
+			);
+			path = ListaTenis;
+			sourceTree = "<group>";
+		};
+		A465820F1BF5F301005EC4B8 /* ListaTenisTests */ = {
+			isa = PBXGroup;
+			children = (
+				A46582101BF5F301005EC4B8 /* ListaTenisTests.swift */,
+				A46582121BF5F301005EC4B8 /* Info.plist */,
+			);
+			path = ListaTenisTests;
+			sourceTree = "<group>";
+		};
+		A465821A1BF5F301005EC4B8 /* ListaTenisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A465821B1BF5F301005EC4B8 /* ListaTenisUITests.swift */,
+				A465821D1BF5F301005EC4B8 /* Info.plist */,
+			);
+			path = ListaTenisUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A46581F71BF5F300005EC4B8 /* ListaTenis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46582201BF5F301005EC4B8 /* Build configuration list for PBXNativeTarget "ListaTenis" */;
+			buildPhases = (
+				A46581F41BF5F300005EC4B8 /* Sources */,
+				A46581F51BF5F300005EC4B8 /* Frameworks */,
+				A46581F61BF5F300005EC4B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ListaTenis;
+			productName = ListaTenis;
+			productReference = A46581F81BF5F300005EC4B8 /* ListaTenis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A465820B1BF5F301005EC4B8 /* ListaTenisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46582231BF5F301005EC4B8 /* Build configuration list for PBXNativeTarget "ListaTenisTests" */;
+			buildPhases = (
+				A46582081BF5F301005EC4B8 /* Sources */,
+				A46582091BF5F301005EC4B8 /* Frameworks */,
+				A465820A1BF5F301005EC4B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A465820E1BF5F301005EC4B8 /* PBXTargetDependency */,
+			);
+			name = ListaTenisTests;
+			productName = ListaTenisTests;
+			productReference = A465820C1BF5F301005EC4B8 /* ListaTenisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A46582161BF5F301005EC4B8 /* ListaTenisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46582261BF5F301005EC4B8 /* Build configuration list for PBXNativeTarget "ListaTenisUITests" */;
+			buildPhases = (
+				A46582131BF5F301005EC4B8 /* Sources */,
+				A46582141BF5F301005EC4B8 /* Frameworks */,
+				A46582151BF5F301005EC4B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46582191BF5F301005EC4B8 /* PBXTargetDependency */,
+			);
+			name = ListaTenisUITests;
+			productName = ListaTenisUITests;
+			productReference = A46582171BF5F301005EC4B8 /* ListaTenisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A46581F01BF5F300005EC4B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = 7MOB;
+				TargetAttributes = {
+					A46581F71BF5F300005EC4B8 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					A465820B1BF5F301005EC4B8 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A46581F71BF5F300005EC4B8;
+					};
+					A46582161BF5F301005EC4B8 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A46581F71BF5F300005EC4B8;
+					};
+				};
+			};
+			buildConfigurationList = A46581F31BF5F300005EC4B8 /* Build configuration list for PBXProject "ListaTenis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A46581EF1BF5F300005EC4B8;
+			productRefGroup = A46581F91BF5F300005EC4B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A46581F71BF5F300005EC4B8 /* ListaTenis */,
+				A465820B1BF5F301005EC4B8 /* ListaTenisTests */,
+				A46582161BF5F301005EC4B8 /* ListaTenisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A46581F61BF5F300005EC4B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46582061BF5F300005EC4B8 /* LaunchScreen.storyboard in Resources */,
+				A46582031BF5F300005EC4B8 /* Assets.xcassets in Resources */,
+				A465822A1BF5F34C005EC4B8 /* ListaTenis.plist in Resources */,
+				A46582011BF5F300005EC4B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A465820A1BF5F301005EC4B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46582151BF5F301005EC4B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A46581F41BF5F300005EC4B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46581FC1BF5F300005EC4B8 /* AppDelegate.swift in Sources */,
+				A465822C1BF5F39E005EC4B8 /* TenisTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46582081BF5F301005EC4B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46582111BF5F301005EC4B8 /* ListaTenisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46582131BF5F301005EC4B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A465821C1BF5F301005EC4B8 /* ListaTenisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A465820E1BF5F301005EC4B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46581F71BF5F300005EC4B8 /* ListaTenis */;
+			targetProxy = A465820D1BF5F301005EC4B8 /* PBXContainerItemProxy */;
+		};
+		A46582191BF5F301005EC4B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46581F71BF5F300005EC4B8 /* ListaTenis */;
+			targetProxy = A46582181BF5F301005EC4B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A46581FF1BF5F300005EC4B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A46582001BF5F300005EC4B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A46582041BF5F300005EC4B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A46582051BF5F300005EC4B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A465821E1BF5F301005EC4B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A465821F1BF5F301005EC4B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46582211BF5F301005EC4B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ListaTenis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.ListaTenis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A46582221BF5F301005EC4B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ListaTenis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.ListaTenis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A46582241BF5F301005EC4B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ListaTenisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.ListaTenisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListaTenis.app/ListaTenis";
+			};
+			name = Debug;
+		};
+		A46582251BF5F301005EC4B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ListaTenisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.ListaTenisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListaTenis.app/ListaTenis";
+			};
+			name = Release;
+		};
+		A46582271BF5F301005EC4B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ListaTenisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.ListaTenisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ListaTenis;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A46582281BF5F301005EC4B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ListaTenisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.ListaTenisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ListaTenis;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A46581F31BF5F300005EC4B8 /* Build configuration list for PBXProject "ListaTenis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A465821E1BF5F301005EC4B8 /* Debug */,
+				A465821F1BF5F301005EC4B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46582201BF5F301005EC4B8 /* Build configuration list for PBXNativeTarget "ListaTenis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46582211BF5F301005EC4B8 /* Debug */,
+				A46582221BF5F301005EC4B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A46582231BF5F301005EC4B8 /* Build configuration list for PBXNativeTarget "ListaTenisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46582241BF5F301005EC4B8 /* Debug */,
+				A46582251BF5F301005EC4B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A46582261BF5F301005EC4B8 /* Build configuration list for PBXNativeTarget "ListaTenisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46582271BF5F301005EC4B8 /* Debug */,
+				A46582281BF5F301005EC4B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A46581F01BF5F300005EC4B8 /* Project object */;
+}
