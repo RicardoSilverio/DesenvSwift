@@ -13,13 +13,14 @@
 		AC09231E1BF68BE00040E4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC09231C1BF68BE00040E4D9 /* LaunchScreen.storyboard */; };
 		AC0923291BF68BE00040E4D9 /* RSSTaskListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923281BF68BE00040E4D9 /* RSSTaskListTests.swift */; };
 		AC0923341BF68BE10040E4D9 /* RSSTaskListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923331BF68BE10040E4D9 /* RSSTaskListUITests.swift */; };
-		AC0923421BF68D9C0040E4D9 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923411BF68D9C0040E4D9 /* TaskListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		AC0923451BF690950040E4D9 /* TaskListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC0923431BF690950040E4D9 /* TaskListModel.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
-		AC09234A1BF699100040E4D9 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923461BF699100040E4D9 /* Task+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		AC09234B1BF699100040E4D9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923471BF699100040E4D9 /* Task.swift */; settings = {ASSET_TAGS = (); }; };
-		AC09234C1BF699100040E4D9 /* Status+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923481BF699100040E4D9 /* Status+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		AC09234D1BF699100040E4D9 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923491BF699100040E4D9 /* Status.swift */; settings = {ASSET_TAGS = (); }; };
-		AC09234F1BF6A1CA0040E4D9 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09234E1BF6A1CA0040E4D9 /* TaskDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC0923421BF68D9C0040E4D9 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923411BF68D9C0040E4D9 /* TaskListTableViewController.swift */; };
+		AC0923451BF690950040E4D9 /* TaskListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC0923431BF690950040E4D9 /* TaskListModel.xcdatamodeld */; };
+		AC09234A1BF699100040E4D9 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923461BF699100040E4D9 /* Task+CoreDataProperties.swift */; };
+		AC09234B1BF699100040E4D9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923471BF699100040E4D9 /* Task.swift */; };
+		AC09234C1BF699100040E4D9 /* Status+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923481BF699100040E4D9 /* Status+CoreDataProperties.swift */; };
+		AC09234D1BF699100040E4D9 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0923491BF699100040E4D9 /* Status.swift */; };
+		AC09234F1BF6A1CA0040E4D9 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09234E1BF6A1CA0040E4D9 /* TaskDetailViewController.swift */; };
+		ACE48C1A1BFA8BC700B6272F /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE48C191BFA8BC700B6272F /* Setup.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		AC0923481BF699100040E4D9 /* Status+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Status+CoreDataProperties.swift"; path = "../Status+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AC0923491BF699100040E4D9 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Status.swift; path = ../Status.swift; sourceTree = "<group>"; };
 		AC09234E1BF6A1CA0040E4D9 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		ACE48C191BFA8BC700B6272F /* Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +117,13 @@
 				AC0923491BF699100040E4D9 /* Status.swift */,
 				AC0923131BF68BE00040E4D9 /* AppDelegate.swift */,
 				AC0923171BF68BE00040E4D9 /* Main.storyboard */,
-				AC09231A1BF68BE00040E4D9 /* Assets.xcassets */,
 				AC09231C1BF68BE00040E4D9 /* LaunchScreen.storyboard */,
+				AC09231A1BF68BE00040E4D9 /* Assets.xcassets */,
 				AC09231F1BF68BE00040E4D9 /* Info.plist */,
 				AC0923411BF68D9C0040E4D9 /* TaskListTableViewController.swift */,
 				AC0923431BF690950040E4D9 /* TaskListModel.xcdatamodeld */,
 				AC09234E1BF6A1CA0040E4D9 /* TaskDetailViewController.swift */,
+				ACE48C191BFA8BC700B6272F /* Setup.swift */,
 			);
 			path = RSSTaskList;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				AC09234C1BF699100040E4D9 /* Status+CoreDataProperties.swift in Sources */,
 				AC09234A1BF699100040E4D9 /* Task+CoreDataProperties.swift in Sources */,
 				AC09234F1BF6A1CA0040E4D9 /* TaskDetailViewController.swift in Sources */,
+				ACE48C1A1BFA8BC700B6272F /* Setup.swift in Sources */,
 				AC0923141BF68BE00040E4D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +511,7 @@
 				AC09233A1BF68BE10040E4D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC09233B1BF68BE10040E4D9 /* Build configuration list for PBXNativeTarget "RSSTaskListTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				AC09233D1BF68BE10040E4D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC09233E1BF68BE10040E4D9 /* Build configuration list for PBXNativeTarget "RSSTaskListUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				AC0923401BF68BE10040E4D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

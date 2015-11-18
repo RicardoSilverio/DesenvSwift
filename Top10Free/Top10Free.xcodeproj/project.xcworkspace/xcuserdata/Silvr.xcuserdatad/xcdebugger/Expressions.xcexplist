@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TopFreeTableViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:TopFreeTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "top10">
+            </PersistentString>
+            <PersistentString
+               value = "cell.textLabel?.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TopFreeTableViewController.getTop10Free(NSData) -&gt; ():TopFreeTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "stringURLImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TopFreeTableViewController.(loadImage(TopFreeTableViewController) -&gt; (NSURL, cell : [String : AnyObject]) -&gt; ()).(closure #1):TopFreeTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TopFreeTableViewController.(loadImage(TopFreeTableViewController) -&gt; (NSURL, position : Int) -&gt; ()).(closure #1):TopFreeTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell[&quot;imagem&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "UIImage(data: imageData)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TopFreeTableViewController.(loadImage(TopFreeTableViewController) -&gt; (NSURL, cell : NSMutableDictionary) -&gt; ()).(closure #1):TopFreeTableViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

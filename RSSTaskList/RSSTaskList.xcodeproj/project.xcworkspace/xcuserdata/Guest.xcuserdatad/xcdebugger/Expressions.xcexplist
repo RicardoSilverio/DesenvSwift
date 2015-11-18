@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TaskListTableViewController.tabBarController(UITabBarController, didSelectViewController : UIViewController) -&gt; ():TaskListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tabBarController.selectedIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskListTableViewController.viewDidAppear(Bool) -&gt; ():TaskListTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TaskListTableViewController.getFetchedResultController() -&gt; ():TaskListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tabBarController?.selectedIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
