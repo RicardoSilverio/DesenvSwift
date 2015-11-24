@@ -17,7 +17,7 @@ class ListaDetailTableViewController: UIViewController, UITableViewDelegate, UIT
     var managedObjectContext:NSManagedObjectContext?
     
     var lista:Lista?
-    var produtos:[String?!] = []
+    var produtos:[Produto?!] = []
     
     @IBOutlet weak var txtNomeLista: UITextField!
     @IBOutlet weak var txtNomeProduto: UITextField!
@@ -30,7 +30,7 @@ class ListaDetailTableViewController: UIViewController, UITableViewDelegate, UIT
             txtNomeLista.text = lista?.nome
             if(lista?.produtos != nil) {
                 for produto in (lista?.produtos)! {
-                    self.produtos.append(produto.nome)
+                    self.produtos.append(produto as! Produto)
                 }
             }
         }
@@ -54,7 +54,15 @@ class ListaDetailTableViewController: UIViewController, UITableViewDelegate, UIT
     @IBAction func tapAddProduto(sender: UIButton) {
         let textoProduto = txtNomeProduto.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         if(textoProduto != "") {
-            produtos.append(textoProduto)
+            if(lista == nil) {
+                let entityDescription = NSEntityDescription.entityForName("Lista", inManagedObjectContext: self.managedObjectContext!)
+                self.lista = Lista(entity: entityDescription!, insertIntoManagedObjectContext: self.managedObjectContext)
+            }
+            let entityDescription = NSEntityDescription.entityForName("Produto", inManagedObjectContext: self.managedObjectContext!)
+            let produto = Produto(entity: entityDescription!, insertIntoManagedObjectContext: self.managedObjectContext)
+            produto.nome = textoProduto
+            produto.lista = lista
+            produtos.append(produto)
             self.tableView.reloadData()
         }
         
@@ -62,7 +70,7 @@ class ListaDetailTableViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CellProduto", forIndexPath: indexPath)
-        cell.textLabel?.text = produtos[indexPath.row]
+        cell.textLabel?.text = produtos[indexPath.row]!?.nome
         return cell
     }
     
@@ -83,28 +91,25 @@ class ListaDetailTableViewController: UIViewController, UITableViewDelegate, UIT
         } catch {
             print("Erro ao salvar lista")
         }
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            // Delete the row from the data source
+            let produto = self.produtos[indexPath.row]
+            self.produtos.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC80A3121BFD2412001268DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3111BFD2412001268DA /* AppDelegate.swift */; };
+		AC80A3171BFD2412001268DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80A3151BFD2412001268DA /* Main.storyboard */; };
+		AC80A3191BFD2412001268DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC80A3181BFD2412001268DA /* Assets.xcassets */; };
+		AC80A31C1BFD2412001268DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC80A31A1BFD2412001268DA /* LaunchScreen.storyboard */; };
+		AC80A3271BFD2412001268DA /* RSSGuiaTurismoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3261BFD2412001268DA /* RSSGuiaTurismoTests.swift */; };
+		AC80A3321BFD2412001268DA /* RSSGuiaTurismoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3311BFD2412001268DA /* RSSGuiaTurismoUITests.swift */; };
+		AC80A3401BFD2419001268DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80A33F1BFD2419001268DA /* MapKit.framework */; };
+		AC80A3421BFD269D001268DA /* RSSMapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3411BFD269D001268DA /* RSSMapaViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC80A3461BFD26E8001268DA /* RSSDetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3451BFD26E8001268DA /* RSSDetalheViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC80A3481BFD2B7A001268DA /* RSSLocalAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3471BFD2B7A001268DA /* RSSLocalAnnotation.swift */; settings = {ASSET_TAGS = (); }; };
+		AC80A34A1BFD3250001268DA /* RSSLocalVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3491BFD3250001268DA /* RSSLocalVO.swift */; settings = {ASSET_TAGS = (); }; };
+		AC80A34C1BFD3B42001268DA /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A34B1BFD3B42001268DA /* Setup.swift */; settings = {ASSET_TAGS = (); }; };
+		AC80A34F1BFD3BA9001268DA /* GuiaTurismoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC80A34D1BFD3BA9001268DA /* GuiaTurismoModel.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		AC80A3521BFD3DC3001268DA /* Local+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3501BFD3DC3001268DA /* Local+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		AC80A3531BFD3DC3001268DA /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80A3511BFD3DC3001268DA /* Local.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC80A3231BFD2412001268DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC80A3061BFD2412001268DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC80A30D1BFD2412001268DA;
+			remoteInfo = RSSGuiaTurismo;
+		};
+		AC80A32E1BFD2412001268DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC80A3061BFD2412001268DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC80A30D1BFD2412001268DA;
+			remoteInfo = RSSGuiaTurismo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC80A30E1BFD2412001268DA /* RSSGuiaTurismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSGuiaTurismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC80A3111BFD2412001268DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC80A3161BFD2412001268DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC80A3181BFD2412001268DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC80A31B1BFD2412001268DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC80A31D1BFD2412001268DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC80A3221BFD2412001268DA /* RSSGuiaTurismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSGuiaTurismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC80A3261BFD2412001268DA /* RSSGuiaTurismoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSGuiaTurismoTests.swift; sourceTree = "<group>"; };
+		AC80A3281BFD2412001268DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC80A32D1BFD2412001268DA /* RSSGuiaTurismoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSGuiaTurismoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC80A3311BFD2412001268DA /* RSSGuiaTurismoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSGuiaTurismoUITests.swift; sourceTree = "<group>"; };
+		AC80A3331BFD2412001268DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC80A33F1BFD2419001268DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AC80A3411BFD269D001268DA /* RSSMapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSMapaViewController.swift; sourceTree = "<group>"; };
+		AC80A3451BFD26E8001268DA /* RSSDetalheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSDetalheViewController.swift; sourceTree = "<group>"; };
+		AC80A3471BFD2B7A001268DA /* RSSLocalAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSLocalAnnotation.swift; sourceTree = "<group>"; };
+		AC80A3491BFD3250001268DA /* RSSLocalVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSLocalVO.swift; sourceTree = "<group>"; };
+		AC80A34B1BFD3B42001268DA /* Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		AC80A34E1BFD3BA9001268DA /* GuiaTurismoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuiaTurismoModel.xcdatamodel; sourceTree = "<group>"; };
+		AC80A3501BFD3DC3001268DA /* Local+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Local+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC80A3511BFD3DC3001268DA /* Local.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC80A30B1BFD2412001268DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC80A3401BFD2419001268DA /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC80A31F1BFD2412001268DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC80A32A1BFD2412001268DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC80A3051BFD2412001268DA = {
+			isa = PBXGroup;
+			children = (
+				AC80A33F1BFD2419001268DA /* MapKit.framework */,
+				AC80A3101BFD2412001268DA /* RSSGuiaTurismo */,
+				AC80A3251BFD2412001268DA /* RSSGuiaTurismoTests */,
+				AC80A3301BFD2412001268DA /* RSSGuiaTurismoUITests */,
+				AC80A30F1BFD2412001268DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC80A30F1BFD2412001268DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC80A30E1BFD2412001268DA /* RSSGuiaTurismo.app */,
+				AC80A3221BFD2412001268DA /* RSSGuiaTurismoTests.xctest */,
+				AC80A32D1BFD2412001268DA /* RSSGuiaTurismoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC80A3101BFD2412001268DA /* RSSGuiaTurismo */ = {
+			isa = PBXGroup;
+			children = (
+				AC80A3501BFD3DC3001268DA /* Local+CoreDataProperties.swift */,
+				AC80A3511BFD3DC3001268DA /* Local.swift */,
+				AC80A3111BFD2412001268DA /* AppDelegate.swift */,
+				AC80A3151BFD2412001268DA /* Main.storyboard */,
+				AC80A3181BFD2412001268DA /* Assets.xcassets */,
+				AC80A31A1BFD2412001268DA /* LaunchScreen.storyboard */,
+				AC80A31D1BFD2412001268DA /* Info.plist */,
+				AC80A3411BFD269D001268DA /* RSSMapaViewController.swift */,
+				AC80A3451BFD26E8001268DA /* RSSDetalheViewController.swift */,
+				AC80A3471BFD2B7A001268DA /* RSSLocalAnnotation.swift */,
+				AC80A3491BFD3250001268DA /* RSSLocalVO.swift */,
+				AC80A34B1BFD3B42001268DA /* Setup.swift */,
+				AC80A34D1BFD3BA9001268DA /* GuiaTurismoModel.xcdatamodeld */,
+			);
+			path = RSSGuiaTurismo;
+			sourceTree = "<group>";
+		};
+		AC80A3251BFD2412001268DA /* RSSGuiaTurismoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC80A3261BFD2412001268DA /* RSSGuiaTurismoTests.swift */,
+				AC80A3281BFD2412001268DA /* Info.plist */,
+			);
+			path = RSSGuiaTurismoTests;
+			sourceTree = "<group>";
+		};
+		AC80A3301BFD2412001268DA /* RSSGuiaTurismoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC80A3311BFD2412001268DA /* RSSGuiaTurismoUITests.swift */,
+				AC80A3331BFD2412001268DA /* Info.plist */,
+			);
+			path = RSSGuiaTurismoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC80A30D1BFD2412001268DA /* RSSGuiaTurismo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC80A3361BFD2412001268DA /* Build configuration list for PBXNativeTarget "RSSGuiaTurismo" */;
+			buildPhases = (
+				AC80A30A1BFD2412001268DA /* Sources */,
+				AC80A30B1BFD2412001268DA /* Frameworks */,
+				AC80A30C1BFD2412001268DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSGuiaTurismo;
+			productName = RSSGuiaTurismo;
+			productReference = AC80A30E1BFD2412001268DA /* RSSGuiaTurismo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC80A3211BFD2412001268DA /* RSSGuiaTurismoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC80A3391BFD2412001268DA /* Build configuration list for PBXNativeTarget "RSSGuiaTurismoTests" */;
+			buildPhases = (
+				AC80A31E1BFD2412001268DA /* Sources */,
+				AC80A31F1BFD2412001268DA /* Frameworks */,
+				AC80A3201BFD2412001268DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC80A3241BFD2412001268DA /* PBXTargetDependency */,
+			);
+			name = RSSGuiaTurismoTests;
+			productName = RSSGuiaTurismoTests;
+			productReference = AC80A3221BFD2412001268DA /* RSSGuiaTurismoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC80A32C1BFD2412001268DA /* RSSGuiaTurismoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC80A33C1BFD2412001268DA /* Build configuration list for PBXNativeTarget "RSSGuiaTurismoUITests" */;
+			buildPhases = (
+				AC80A3291BFD2412001268DA /* Sources */,
+				AC80A32A1BFD2412001268DA /* Frameworks */,
+				AC80A32B1BFD2412001268DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC80A32F1BFD2412001268DA /* PBXTargetDependency */,
+			);
+			name = RSSGuiaTurismoUITests;
+			productName = RSSGuiaTurismoUITests;
+			productReference = AC80A32D1BFD2412001268DA /* RSSGuiaTurismoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC80A3061BFD2412001268DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = 7MOB;
+				TargetAttributes = {
+					AC80A30D1BFD2412001268DA = {
+						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					AC80A3211BFD2412001268DA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = AC80A30D1BFD2412001268DA;
+					};
+					AC80A32C1BFD2412001268DA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = AC80A30D1BFD2412001268DA;
+					};
+				};
+			};
+			buildConfigurationList = AC80A3091BFD2412001268DA /* Build configuration list for PBXProject "RSSGuiaTurismo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC80A3051BFD2412001268DA;
+			productRefGroup = AC80A30F1BFD2412001268DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC80A30D1BFD2412001268DA /* RSSGuiaTurismo */,
+				AC80A3211BFD2412001268DA /* RSSGuiaTurismoTests */,
+				AC80A32C1BFD2412001268DA /* RSSGuiaTurismoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC80A30C1BFD2412001268DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC80A31C1BFD2412001268DA /* LaunchScreen.storyboard in Resources */,
+				AC80A3191BFD2412001268DA /* Assets.xcassets in Resources */,
+				AC80A3171BFD2412001268DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC80A3201BFD2412001268DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC80A32B1BFD2412001268DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC80A30A1BFD2412001268DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC80A3531BFD3DC3001268DA /* Local.swift in Sources */,
+				AC80A34F1BFD3BA9001268DA /* GuiaTurismoModel.xcdatamodeld in Sources */,
+				AC80A34A1BFD3250001268DA /* RSSLocalVO.swift in Sources */,
+				AC80A34C1BFD3B42001268DA /* Setup.swift in Sources */,
+				AC80A3461BFD26E8001268DA /* RSSDetalheViewController.swift in Sources */,
+				AC80A3481BFD2B7A001268DA /* RSSLocalAnnotation.swift in Sources */,
+				AC80A3421BFD269D001268DA /* RSSMapaViewController.swift in Sources */,
+				AC80A3121BFD2412001268DA /* AppDelegate.swift in Sources */,
+				AC80A3521BFD3DC3001268DA /* Local+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC80A31E1BFD2412001268DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC80A3271BFD2412001268DA /* RSSGuiaTurismoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC80A3291BFD2412001268DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC80A3321BFD2412001268DA /* RSSGuiaTurismoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC80A3241BFD2412001268DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC80A30D1BFD2412001268DA /* RSSGuiaTurismo */;
+			targetProxy = AC80A3231BFD2412001268DA /* PBXContainerItemProxy */;
+		};
+		AC80A32F1BFD2412001268DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC80A30D1BFD2412001268DA /* RSSGuiaTurismo */;
+			targetProxy = AC80A32E1BFD2412001268DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC80A3151BFD2412001268DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC80A3161BFD2412001268DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC80A31A1BFD2412001268DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC80A31B1BFD2412001268DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC80A3341BFD2412001268DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC80A3351BFD2412001268DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC80A3371BFD2412001268DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RSSGuiaTurismo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.RSSGuiaTurismo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC80A3381BFD2412001268DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RSSGuiaTurismo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.RSSGuiaTurismo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC80A33A1BFD2412001268DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RSSGuiaTurismoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.RSSGuiaTurismoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSGuiaTurismo.app/RSSGuiaTurismo";
+			};
+			name = Debug;
+		};
+		AC80A33B1BFD2412001268DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RSSGuiaTurismoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.RSSGuiaTurismoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSGuiaTurismo.app/RSSGuiaTurismo";
+			};
+			name = Release;
+		};
+		AC80A33D1BFD2412001268DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RSSGuiaTurismoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.RSSGuiaTurismoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RSSGuiaTurismo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AC80A33E1BFD2412001268DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RSSGuiaTurismoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.7mob.RSSGuiaTurismoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RSSGuiaTurismo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC80A3091BFD2412001268DA /* Build configuration list for PBXProject "RSSGuiaTurismo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC80A3341BFD2412001268DA /* Debug */,
+				AC80A3351BFD2412001268DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC80A3361BFD2412001268DA /* Build configuration list for PBXNativeTarget "RSSGuiaTurismo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC80A3371BFD2412001268DA /* Debug */,
+				AC80A3381BFD2412001268DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC80A3391BFD2412001268DA /* Build configuration list for PBXNativeTarget "RSSGuiaTurismoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC80A33A1BFD2412001268DA /* Debug */,
+				AC80A33B1BFD2412001268DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC80A33C1BFD2412001268DA /* Build configuration list for PBXNativeTarget "RSSGuiaTurismoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC80A33D1BFD2412001268DA /* Debug */,
+				AC80A33E1BFD2412001268DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC80A34D1BFD3BA9001268DA /* GuiaTurismoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC80A34E1BFD3BA9001268DA /* GuiaTurismoModel.xcdatamodel */,
+			);
+			currentVersion = AC80A34E1BFD3BA9001268DA /* GuiaTurismoModel.xcdatamodel */;
+			path = GuiaTurismoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC80A3061BFD2412001268DA /* Project object */;
+}

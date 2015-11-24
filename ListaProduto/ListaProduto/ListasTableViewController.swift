@@ -25,6 +25,13 @@ class ListasTableViewController: UITableViewController, NSFetchedResultsControll
         
         self.fetchedResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath: nil, cacheName: nil)
         self.fetchedResultController?.delegate = self
+        
+        
+        do {
+            try fetchedResultController!.performFetch()
+        } catch {
+            print("Erro ao recuperar listas")
+        }
     }
 
     override func didReceiveMemoryWarning() {

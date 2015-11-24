@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ListaDetailTableViewController.tapSalvarLista(UIBarButtonItem) -&gt; ():ListaDetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "produto.lista">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListasTableViewController.numberOfSectionsInTableView(UITableView) -&gt; Int:ListasTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.fetchedResultController?.fetchedObjects">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListaDetailTableViewController.tapAddProduto(UIButton) -&gt; ():ListaDetailTableViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -60,7 +60,7 @@ class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
                 anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
                 anView!.image = UIImage(named: "interesseLogo")
                 anView!.canShowCallout = true
-                let button = UIButton(type: UIButtonType.DetailDisclosure)
+                //let button = UIButton(type: UIButtonType.DetailDisclosure)
                 anView!.rightCalloutAccessoryView = UIButton(type: UIButtonType.DetailDisclosure)
             }
             return anView
